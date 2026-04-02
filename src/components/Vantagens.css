@@ -1,0 +1,60 @@
+.vantagens-section {
+  padding: 80px 60px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.vantagens-title {
+  font-size: 36px;
+  color: #00A550;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+/* CONTAINER */
+.vantagens-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.vantagem-card {
+  background: #fff;
+  border-radius: 12px;
+  width: 320px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.vantagem-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* IMAGEM */
+.vantagem-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* TITULO */
+.vantagem-card h3 {
+  font-size: 20px;
+  color: #00A550;
+  margin-bottom: 10px;
+}
+
+/* TEXTO */
+.vantagem-card p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}

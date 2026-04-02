@@ -1,0 +1,250 @@
+/* style.css */
+
+/* Definição da fonte personalizada "Simplifica" */
+/*
+@font-face {
+    font-family: 'Simplifica';
+    src: url('./fonts/SIMPLIFICA-Typeface.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*/
+/* Estilos do Corpo do Site */
+body {
+    font-family: 'Inter', sans-serif;
+    padding-top: 90px;
+    /*  letter-spacing: 1px;*/
+    background-color: #FFFFFF;
+}
+
+/* --- Cores Reutilizáveis --- */
+.text-green-main {
+    color: #00A550 !important;
+}
+
+.bg-green-main {
+    background-color: #00A550 !important;
+}
+
+/* Container para a imagem e o texto sobreposto (coluna esquerda) */
+.bike-sharing-overlay-container {
+    position: relative;
+    padding: 2.5rem;
+    min-height: 350px;
+    overflow: hidden;
+}
+
+/* Imagem para o fundo da coluna esquerda */
+.bike-sharing-overlay-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    /*filter: brightness(90%);*/
+    /* Escurece a imagem para contraste */
+}
+
+/* Conteúdo (texto) que vai por cima da imagem */
+.bike-sharing-overlay-content {
+    position: relative;
+    z-index: 2;
+    color: #FFFFFF;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;  
+     padding: 0 5%;
+}
+
+/* NOVO:  (coluna direita) */
+.bike-sharing-icon-column {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    /* Propriedades Flexbox para o ícone, que já estavam no #bike-sharing .col-md-4 */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Título da seção "Bike Sharing" (texto dentro da coluna esquerda) */
+.bike-sharing-title {
+     width: 50%;
+    margin-left:10%;
+    font-family: 'Simplifica', sans-serif;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center; 
+}
+
+/* Texto da seção "Bike Sharing" (parágrafo dentro da coluna esquerda) */
+.bike-sharing-text {
+    width: 50%;
+    margin-left:10%;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    /*text-align: justify; */
+}
+
+/* Parte da seção de Por que Bicicleta de Bambu  */
+.card-container-wrapper {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- CARD DE BICICLETAS --- */
+
+#nossas-bicicletas .card-img-top {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* --- Ajuste para os botões 'COMPRAR' nos cards de bicicleta --- */
+#nossas-bicicletas .card-body .btn {
+  align-self: flex-start;
+  min-width: 150px;
+}
+
+/* Força o alinhamento à esquerda APENAS nos cards da seção de bicicletas */
+#nossas-bicicletas .card-body {
+  text-align: left;
+  padding: 1.35rem;
+}
+/* Deixa o conteudo centralizado */
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-family: 'Inter', sans-serif;
+    color: #00A550;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Estilos para o Conteúdo Principal Seções --- */
+.section-title {
+    font-family: 'Simplifica', sans-serif;
+    color: #00A550;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+/* Subtítulos Horário, Endereço, Contatos, Instagram */
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+/* Parágrafos e Endereços */
+p,
+address {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 200;
+}
+
+/* Links dentro de Parágrafos */
+p a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000000;
+}
+
+p a:hover {
+    color: #00A550;
+}
+
+/* Estilos para os Campos de Formulário Nome:, E-mail:, Mensagem: */
+.form-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    padding: 0.5rem 0.75rem !important;
+    line-height: 1.5 !important;
+    height: auto !important;
+    background-color: #E6F5EC !important;
+    border: 1px solid #C7E0D2
+}
+
+.form-control::placeholder {
+    font-family: 'Inter', sans-serif;
+    color: #888;
+    opacity: 1;
+}
+
+/* Botões (COMPRAR e ENVIAR) */
+.btn-success {
+    font-family: 'Simplifica', sans-serif;
+    background-color: #00A550 !important;
+    border-color: #00A550 !important;
+    border: none !important;
+    border-radius: 50px !important;
+    color: #FFFFFF !important;
+    padding: 10px 20px !important;
+    /*line-height: 1 !important;*/
+    font-size: 14px !important;
+    font-weight: bold !important;
+    display: inline-block !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    width: auto !important;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease !important;
+    border-color: 0.3sease !important;
+}
+
+.btn-success:hover {
+    background-color: #247a4c !important;
+    border-color: #247a4c !important;
+}
+
+.btn-subtle-radius {
+    border-radius: 8px !important;
+}
+
+.mais-informacoes,
+.fale-conosco {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+/* --- Estilo para o Rodapé --- */
+.bg-green-footer {
+    background-color: #00A550 !important;
+    color: #FFFFFF !important;
+}
+
+.bg-green-footer p {
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF !important;
+    font-weight: 200;
+}
