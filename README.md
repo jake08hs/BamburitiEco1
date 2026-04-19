@@ -1,8 +1,8 @@
 # 🎋 Bamburiti - Ecossistema Sustentável
 
-![Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-green)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-green)
 
 O **Bamburiti** é uma plataforma web dedicada à promoção de um estilo de vida sustentável, focada no uso do bambu e na mobilidade urbana consciente. O projeto une design moderno, responsividade e uma interface intuitiva para conectar usuários a soluções ecológicas.
 
